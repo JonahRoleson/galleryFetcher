@@ -1,0 +1,11 @@
+Name    Version ID                  Fix Versions
+------- ------- ------------------- -------------------
+django  4.2.24  GHSA-hpr9-3m2g-3j9p 4.2.25,5.1.13,5.2.7
+django  4.2.24  GHSA-q95w-c7qg-hrff 4.2.25,5.1.13,5.2.7
+pip     25.2    GHSA-4xh5-x5gv-qwph
+pyyaml  4.2b4   PYSEC-2018-49       5.1
+pyyaml  4.2b4   PYSEC-2021-142      5.4
+urllib3 1.26.16 PYSEC-2023-192      1.26.17,2.0.6
+urllib3 1.26.16 PYSEC-2023-212      1.26.18,2.0.7
+urllib3 1.26.16 GHSA-34jh-p97f-mpxf 1.26.19,2.2.2
+urllib3 1.26.16 GHSA-pq67-6m6q-mj2v 2.5.0
