@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GalleryFetcher</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'gallery/style.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1>GalleryFetcher</h1>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h2>Create Thumbnail</h2>
+        <form method="post">{% csrf_token %}
+          <div class="input-row">
+            <input type="text" name="url" placeholder="https://httpbin.org/image/jpeg" size="60" />
+            <button type="submit">Fetch & Thumbnail</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Allowed domains</h2>
+        <ul>
+          {% for d in allowed_domains %}
+            <li>{{ d }}</li>
+          {% empty %}
+            <li>None configured</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <small>Demo theme · Do not use vulnerable deps in production</small>
+    </footer>
+  </body>
+</html>
+

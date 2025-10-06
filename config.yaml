@@ -1,0 +1,13 @@
+allowed_domains:
+  - example.com
+  - images.example.org
+  - images.pexels.com 
+
+thumbnail:
+  size: [200, 200]
+  background: "#1a1a1a"
+
+watermark:
+  text: "GalleryFetcher"
+  opacity: 128
+
