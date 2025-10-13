@@ -22,4 +22,3 @@ if __name__ == "__main__":
             "Couldn't import Django. Make sure it's installed and available on your PYTHONPATH."
         ) from exc
     execute_from_command_line(sys.argv)
-
